@@ -1,127 +1,143 @@
-#nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-#nav a {
-  text-decoration: none;
-  font-family: Poppins, sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  color: #1e31d8;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-left: 24px;
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-#nav a:hover {
-  text-decoration: underline;
-  text-decoration-color: #23a3fa;
-  text-decoration-thickness: 2px;
+.hero {
+  background: #f7f7f9;
 }
 
-#nav nav {
-  width: 45px;
-  height: 30px;
-  display: flex;
-  align-items: center;
+.bg-white {
+  background: #fff;
 }
 
-section {
-  background-image:
-    url("../images/Ellipse 11.png"),
-    url("../images/Rectangle 4.png"),
-    url("../images/Ellipse\ 3.png"),
-    url("../images/Ellipse\ 8.png"),
-    url("../images/Ellipse\ 5.png"),
-    url("../images/Rectangle\ 7.png"),
-    url("../images/Ellipse 12.png"),
-    url("../images/Ellipse 4.png"),
-    url("../images/Rectangle\ 5.png"),
-    url("../images/Ellipse\ 13.png"),
-    url("../images/Ellipse\ 15.png");
-  background-position:
-    19px 79px,
-    294px 68px,
-    323px 102px,
-    214px 110px,
-    125px 106px,
-    127px 98px,
-    370px 385px,
-    290px 509px,
-    240px 507px,
-    357px 392px,
-    106px 497px;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 600px;
-}
-
-section h1 {
-  font-family: Poppins, sans-serif;
-  font-weight: bold;
+.fz-40 {
   font-size: 40px;
-  color: #172b4d;
+}
+
+.fz-18 {
+  font-size: 18px;
+}
+
+.fz-16 {
+  font-size: 16px;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.lh-52 {
   line-height: 52px;
-  text-align: start;
-  margin: 0 24px;
 }
 
-section p {
-  font-family: Poppins, sans-serif;
-  font-weight: normal;
-  font-size: 16px;
+.lh-24 {
   line-height: 24px;
-  color: #344563;
-  margin: 12px 24px 0 24px;
 }
 
-section p:hover {
-  text-decoration: underline;
-  text-decoration-color: #23a3fa;
-  text-decoration-thickness: 2px;
+.lh-20 {
+  line-height: 20px;
 }
 
-section h1:hover {
-  text-decoration: underline;
-  text-decoration-color: #23a3fa;
-  text-decoration-thickness: 2px;
+.link {
+  text-decoration: none;
 }
 
-footer h3 {
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  margin-left: 24px;
+.ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-footer h3:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: #23a3fa;
-}
-
-section footer {
+.flex {
   display: flex;
-  flex-direction: column;
 }
 
-div ul {
-  display: flex;
+.navbar {
+  padding: 1rem 1.5rem;
   align-items: center;
-  padding-left: 0;
-  margin-left: 24px;
+  justify-content: space-between;
 }
 
-li { list-style-type: none; }
+.navbar__link {
+  color: #6070ff;
+}
 
-.icon { margin-right: 20px; }
+.navbar__menu {
+  display: none;
+}
 
-.icon:hover { background-color: #23a3fa; }
+.navbar__hamb {
+  cursor: pointer;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  background-image: url("../images/shapes.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.head {
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 6rem 1.5rem;
+  border-bottom-left-radius: 5rem;
+  z-index: 10;
+}
+
+.head__title {
+  color: #172b4d;
+  width: 10ch;
+}
+
+.head__dsc {
+  margin: 0.8rem 0;
+  color: #344563;
+}
+
+.head__link {
+  color: #7f8cff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.head__icons {
+  margin: 0.5rem 0;
+}
+
+.head__icons__ul {
+  align-items: center;
+  justify-content: space-between;
+  width: 11rem;
+}
